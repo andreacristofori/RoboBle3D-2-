@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+try {
+  new Function("try { foo() }");
+} catch(e) {
+  document.body.innerHTML = e.name + ": " + e.message;
+}
+</script>
+</body>
+</html>

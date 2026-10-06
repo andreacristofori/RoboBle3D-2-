@@ -1,0 +1,82 @@
+14:try {
+17:catch (e) {
+53:    try { motor.run(_LEFT_PORT, left_vel) } catch (e) {}
+54:    catch (e) {  }
+55:    try { motor.run(_RIGHT_PORT, right_vel) } catch (e) {}
+56:    catch (e) {  }
+90:    try { motor.reset_relative_position(_LEFT_PORT, 0) } catch (e) {}
+91:    catch (e) {  }
+92:    try { motor.reset_relative_position(_RIGHT_PORT, 0) } catch (e) {}
+93:    catch (e) {  }
+94:    try { motor.run(_LEFT_PORT, left_vel) } catch (e) {}
+95:    catch (e) {  }
+96:    try { motor.run(_RIGHT_PORT, right_vel) } catch (e) {}
+97:    catch (e) {  }
+99:    try {
+106:            try { pos_left = abs(motor.relative_position(_LEFT_PORT)) } catch (e) {}
+107:            catch (e) {  }
+108:            try { pos_right = abs(motor.relative_position(_RIGHT_PORT)) } catch (e) {}
+109:            catch (e) {  }
+116:    finally {
+117:        try { motor.stop(_LEFT_PORT) } catch (e) {}
+118:        catch (e) {  }
+119:        try { motor.stop(_RIGHT_PORT) } catch (e) {}
+120:        catch (e) {  }
+127:    try { motor_pair.stop(motor_pair.PAIR_1) } catch (e) {}
+128:    catch (e) {  }
+129:    try { motor.stop(_LEFT_PORT) } catch (e) {}
+130:    catch (e) {  }
+131:    try { motor.stop(_RIGHT_PORT) } catch (e) {}
+132:    catch (e) {  }
+135:    try {
+138:    catch (e) {
+152:    try {
+162:            try {
+167:            catch (e) {
+179:                try {
+183:                catch (e) {
+186:                try {
+189:                        try { motor.stop(getattr(port, p)) } catch (e) {}
+190:                        catch (e) {  }
+193:                catch (e) {
+200:    catch (e) {
+204:try {
+207:catch (e) {
+210:try {
+213:catch (e) {
+223:    try {
+226:    catch (e) {
+231:    try {
+234:    catch (e) {
+237:    try {
+246:    catch (e) {
+255:                    try {
+258:                    catch (e) {
+262:                try {
+265:                catch (e) {
+266:                    try {
+269:                    catch (e) {
+273:                try {
+276:                catch (e) {
+277:                    try {
+280:                    catch (e) {
+285:                try {
+288:                catch (e) {
+289:                    try {
+292:                    catch (e) {
+298:                try {
+301:                catch (e) {
+305:                    try {
+308:                    catch (e) {
+327:                try {
+338:                catch (e) {
+363:                try {
+374:                catch (e) {
+385:            try {
+388:            catch (e) {
+392:                try {
+395:                catch (e) {
+403:        try {
+406:        catch (e) {
+410:            try {
+413:            catch (e) {

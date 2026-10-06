@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Hide Blockly scrollbars to keep a clean UI while maintaining trashcan/zoom features */
+.blocklyScrollbarHorizontal,
+.blocklyScrollbarVertical {
+  display: none !important;
+}

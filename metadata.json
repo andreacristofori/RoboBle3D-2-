@@ -1,0 +1,11 @@
+{
+  "name": "Remix BlueRobo3D",
+  "description": "Proviamo a risolvere il problema della versione 4, che non fa andare i lego di scuola",
+  "requestFramePermissions": [
+    "serial",
+    "bluetooth"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

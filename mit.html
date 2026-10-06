@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>[FREE] LEGO® SPIKE™ Prime BLE control (unofficial) - Extensions - MIT App Inventor Community</title>
+    <meta name="description" content="Hi @Sid_coder, 
+If you&amp;#39;re still looking for this, I&amp;#39;ve been building an open-source App Inventor extension for LEGO SPIKE Prime BLE control as a personal project: 
+https://github.com/edcheng1010/appinventor-lego-spike-pr&amp;hellip;">
+    <meta name="generator" content="Discourse 2026.3.0-latest - https://github.com/discourse/discourse version e9e7f85bab38e4eeadc7e2006dd97c6722f4db66">
+<link rel="icon" type="image/png" href="https://community.appinventor.mit.edu/uploads/default/optimized/3X/b/3/b31c85ef8c680bebd74e67785a8bae253991c8c9_2_32x32.png">
+<link rel="apple-touch-icon" type="image/png" href="https://community.appinventor.mit.edu/uploads/default/optimized/1X/177eff2d162f9b17880d0b5fa57dae096922481a_2_180x180.png">
+<meta name="theme-color" media="all" content="#ffffff">
+
+<meta name="color-scheme" content="light">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+<link rel="canonical" href="https://community.appinventor.mit.edu/t/free-lego-spike-prime-ble-control-unofficial/173434" />
+
+
+<link rel="search" type="application/opensearchdescription+xml" href="https://community.appinventor.mit.edu/opensearch.xml" title="MIT App Inventor Community Search">
+
+    
+    <link href="/stylesheets/color_definitions_light_2_3_77dc13e202d6e257c152c7ae49e2578dc13d86bd.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" class="light-scheme" data-scheme-id="2"/>
+
+<link href="/stylesheets/common_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="common"  />
+
+  <link href="/stylesheets/mobile_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="mobile"  />
+  <link href="/stylesheets/desktop_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(min-width: 40rem)" rel="stylesheet" data-target="desktop"  />
+
+
+
+    <link href="/stylesheets/chat_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="chat"  />
+    <link href="/stylesheets/checklist_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="checklist"  />
+    <link href="/stylesheets/discourse-akismet_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-akismet"  />
+    <link href="/stylesheets/discourse-assign_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-assign"  />
+    <link href="/stylesheets/discourse-details_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-details"  />
+    <link href="/stylesheets/discourse-lazy-videos_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-lazy-videos"  />
+    <link href="/stylesheets/discourse-local-dates_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-local-dates"  />
+    <link href="/stylesheets/discourse-narrative-bot_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-narrative-bot"  />
+    <link href="/stylesheets/discourse-presence_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-presence"  />
+    <link href="/stylesheets/discourse-solved_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-solved"  />
+    <link href="/stylesheets/discourse-templates_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-templates"  />
+    <link href="/stylesheets/discourse-topic-voting_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-topic-voting"  />
+    <link href="/stylesheets/discourse-translator_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="discourse-translator"  />
+    <link href="/stylesheets/docker_manager_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="docker_manager"  />
+    <link href="/stylesheets/footnote_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="footnote"  />
+    <link href="/stylesheets/poll_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="poll"  />
+    <link href="/stylesheets/spoiler-alert_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="spoiler-alert"  />
+    <link href="/stylesheets/chat_mobile_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="chat_mobile"  />
+    <link href="/stylesheets/discourse-assign_mobile_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="discourse-assign_mobile"  />
+    <link href="/stylesheets/discourse-solved_mobile_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="discourse-solved_mobile"  />
+    <link href="/stylesheets/discourse-topic-voting_mobile_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(max-width: 39.99999rem)" rel="stylesheet" data-target="discourse-topic-voting_mobile"  />
+    <link href="/stylesheets/chat_desktop_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(min-width: 40rem)" rel="stylesheet" data-target="chat_desktop"  />
+    <link href="/stylesheets/discourse-topic-voting_desktop_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(min-width: 40rem)" rel="stylesheet" data-target="discourse-topic-voting_desktop"  />
+    <link href="/stylesheets/poll_desktop_78cb8ab15e2bf7c5ad447c646a8b4b6aa0edd755.css?__ws=community.appinventor.mit.edu" media="(min-width: 40rem)" rel="stylesheet" data-target="poll_desktop"  />
+
+  <link href="/stylesheets/common_theme_3_71b595ae27a2474295069f7ec136368960b7e5ef.css?__ws=community.appinventor.mit.edu" media="all" rel="stylesheet" data-target="common_theme" data-theme-id="3" data-theme-name="light"/>
+    
+    
+
+    
+    
+        <link rel="alternate nofollow" type="application/rss+xml" title="RSS feed of &#39;[FREE] LEGO® SPIKE™ Prime BLE control (unofficial)&#39;" href="https://community.appinventor.mit.edu/t/free-lego-spike-prime-ble-control-unofficial/173434.rss" />
+    <meta property="og:site_name" content="MIT App Inventor Community" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://community.appinventor.mit.edu/uploads/default/original/1X/4d32ecf51304615f4eaf9d1094a15fc3278691f9.png" />
+<meta property="og:image" content="https://community.appinventor.mit.edu/uploads/default/original/1X/4d32ecf51304615f4eaf9d1094a15fc3278691f9.png" />
+<meta property="og:url" content="https://community.appinventor.mit.edu/t/free-lego-spike-prime-ble-control-unofficial/173434" />
+<meta name="twitter:url" content="https://community.appinventor.mit.edu/t/free-lego-spike-prime-ble-control-unofficial/173434" />
+<meta property="og:title" content="[FREE] LEGO® SPIKE™ Prime BLE control (unofficial)" />
+<meta name="twitter:title" content="[FREE] LEGO® SPIKE™ Prime BLE control (unofficial)" />
+<meta property="og:description" content="Hi @Sid_coder,  If you&#39;re still looking for this, I&#39;ve been building an open-source App Inventor extension for LEGO SPIKE Prime BLE control as a personal project:  https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0  It&#39;s still a minimum viable product (MVP) at this stage, but it already supports BLE scanning/connection, motor control (speed, position, stall detection), coordinated drive-base movement, LED matrix, and sensor readings (color, distance, force,..." />
+<meta name="twitter:description" content="Hi @Sid_coder,  If you&#39;re still looking for this, I&#39;ve been building an open-source App Inventor extension for LEGO SPIKE Prime BLE control as a personal project:  https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0  It&#39;s still a minimum viable product (MVP) at this stage, but it already supports BLE scanning/connection, motor control (speed, position, stall detection), coordinated drive-base movement, LED matrix, and sensor readings (color, distance, force,..." />
+<meta property="og:article:section" content="Extensions" />
+<meta property="og:article:section:color" content="8C6238" />
+<meta property="og:article:tag" content="bluetooth" />
+<meta property="og:article:tag" content="extensions" />
+<meta property="og:article:tag" content="lego" />
+<meta property="og:article:tag" content="robotic" />
+<meta property="og:article:tag" content="free-extension" />
+<meta name="twitter:label1" value="Reading time" />
+<meta name="twitter:data1" value="1 mins 🕑" />
+<meta name="twitter:label2" value="Likes" />
+<meta name="twitter:data2" value="8 ❤" />
+<meta property="article:published_time" content="2026-05-24T14:49:04+00:00" />
+<meta property="og:ignore_canonical" content="true" />
+
+
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"QAPage","name":"[FREE] LEGO® SPIKE™ Prime BLE control (unofficial)","mainEntity":{"@type":"Question","name":"[FREE] LEGO® SPIKE™ Prime BLE control (unofficial)","text":"Hi <a class=\"mention\" href=\"/u/sid_coder\">@Sid_coder<\/a>,\n\nIf you&#39;re still looking for this, I&#39;ve been building an open-source App Inventor extension for LEGO SPIKE Prime BLE control as a personal project:\n\n<a href=\"https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0\">https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0<\/a>\n\nIt&#39;s still a minimum viable product (MVP) at &hellip;","upvoteCount":6,"answerCount":0,"datePublished":"2026-05-24T14:49:04.833Z","author":{"@type":"Person","name":"Edward_Cheng","url":"https://community.appinventor.mit.edu/u/Edward_Cheng"}}}</script>
+  </head>
+  <body class="crawler ">
+    
+    <header>
+  <a href="/">MIT App Inventor Community</a>
+</header>
+
+    <div id="main-outlet" class="wrap" role="main">
+        <div id="topic-title">
+    <h1>
+      <a href="/t/free-lego-spike-prime-ble-control-unofficial/173434">[FREE] LEGO® SPIKE™ Prime BLE control (unofficial)</a>
+    </h1>
+
+      <div class="topic-category" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="/c/extensions/17" class="badge-wrapper bullet" itemprop="item">
+              <span class='badge-category-bg' style='background-color: #8C6238'></span>
+              <span class='badge-category clear-badge'>
+                <span class='category-name' itemprop='name'>Extensions</span>
+              </span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </span>
+      </div>
+
+      <div class="topic-category">
+        <div class='discourse-tags list-tags'>
+            <a href='https://community.appinventor.mit.edu/tag/bluetooth' class='discourse-tag' rel="tag">bluetooth</a>, 
+            <a href='https://community.appinventor.mit.edu/tag/extensions' class='discourse-tag' rel="tag">extensions</a>, 
+            <a href='https://community.appinventor.mit.edu/tag/lego' class='discourse-tag' rel="tag">lego</a>, 
+            <a href='https://community.appinventor.mit.edu/tag/robotic' class='discourse-tag' rel="tag">robotic</a>, 
+            <a href='https://community.appinventor.mit.edu/tag/free-extension' class='discourse-tag' rel="tag">free-extension</a>
+        </div>
+      </div>
+  </div>
+
+  
+
+    <div itemscope itemtype='http://schema.org/DiscussionForumPosting'>
+      <meta itemprop='headline' content='[FREE] LEGO® SPIKE™ Prime BLE control (unofficial)'>
+      <link itemprop='url' href='https://community.appinventor.mit.edu/t/free-lego-spike-prime-ble-control-unofficial/173434'>
+      <meta itemprop='datePublished' content='2026-05-24T14:49:04Z'>
+        <meta itemprop='articleSection' content='Extensions'>
+      <meta itemprop='keywords' content='bluetooth, extensions, lego, robotic, free-extension'>
+      <div itemprop='publisher' itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop='name' content='Massachusetts Institute of Technology'>
+          <div itemprop='logo' itemscope itemtype="http://schema.org/ImageObject">
+            <meta itemprop='url' content='https://community.appinventor.mit.edu/uploads/default/original/1X/69d98bd983c7c56415dd3f05dea67a20ac6d355c.png'>
+          </div>
+      </div>
+
+
+          <div id='post_1'  class='topic-body crawler-post'>
+            <div class='crawler-post-meta'>
+              <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <a itemprop="url" rel='nofollow' href='https://community.appinventor.mit.edu/u/Edward_Cheng'><span itemprop='name'>Edward_Cheng</span></a>
+                
+              </span>
+
+                <link itemprop="mainEntityOfPage" href="https://community.appinventor.mit.edu/t/free-lego-spike-prime-ble-control-unofficial/173434">
+
+
+              <span class="crawler-post-infos">
+                  <time  datetime='2026-05-24T14:49:04Z' class='post-time'>
+                    May 24, 2026,  2:49pm
+                  </time>
+                  <meta itemprop='dateModified' content='2026-05-29T05:48:06Z'>
+              <span itemprop='position'>1</span>
+              </span>
+            </div>
+            <div class='post' itemprop='text'>
+              <p>Hi <a class="mention" href="/u/sid_coder">@Sid_coder</a>,</p>
+<p>If you're still looking for this, I've been building an open-source App Inventor extension for LEGO SPIKE Prime BLE control as a personal project:</p>
+<p><a href="https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0">https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0</a></p>
+<p>It's still a minimum viable product (MVP) at this stage, but it already supports BLE scanning/connection, motor control (speed, position, stall detection), coordinated drive-base movement, LED matrix, and sensor readings (color, distance, force, tilt), all from App Inventor blocks. Feel free to have a try!</p>
+<p>Cheers.<br>
+Ed</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0">
+  <header class="source">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" class="site-icon" alt="" width="32" height="32">
+
+      <a href="https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0" target="_blank" rel="noopener">GitHub</a>
+  </header>
+
+  <article class="onebox-body">
+    <div class="aspect-image" style="--aspect-ratio:690/344;"><img src="https://opengraph.githubassets.com/49f98e4c79c5ef2fb3bac07c796c4c5a02129dd65a223cd0531174f450856a97/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0" class="thumbnail" alt="" width="690" height="345"></div>
+
+<h3><a href="https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0" target="_blank" rel="noopener">Release v0.1.0 — MVP · edcheng1010/appinventor-lego-spike-prime-extension</a></h3>
+
+  <p>SPIKEPrimeAppInventorMVP.mp4
+    
+  
+
+  
+
+  
+
+
+
+Unofficial integration. This is an independent open-source project. It is not affiliated with, endorsed by, or sponsored by the LEGO Group or the Mas...</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+            </div>
+
+            <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+              <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+              <meta itemprop="userInteractionCount" content="6" />
+              <span class='post-likes'>6 Likes</span>
+            </div>
+
+                <div class='crawler-linkback-list'>
+                    <div>
+                      <a href="https://community.appinventor.mit.edu/t/lego-spike-prime-extension/146410/6">Lego Spike Prime Extension</a>
+                    </div>
+                </div>
+
+            
+          </div>
+          <div id='post_2' itemprop='comment' itemscope itemtype='http://schema.org/Comment' class='topic-body crawler-post'>
+            <div class='crawler-post-meta'>
+              <span class="creator" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <a itemprop="url" rel='nofollow' href='https://community.appinventor.mit.edu/u/Edward_Cheng'><span itemprop='name'>Edward_Cheng</span></a>
+                
+              </span>
+
+
+                <link itemprop="image" href="https://community.appinventor.mit.edu/uploads/default/original/4X/5/4/8/548cd1426f14127f99533544398903691a86c781.png">
+
+              <span class="crawler-post-infos">
+                  <time itemprop='datePublished' datetime='2026-05-26T01:51:19Z' class='post-time'>
+                    May 26, 2026,  1:51am
+                  </time>
+                  <meta itemprop='dateModified' content='2026-05-26T02:09:19Z'>
+              <span itemprop='position'>2</span>
+              </span>
+            </div>
+            <div class='post' itemprop='text'>
+              <p>Thanks for moving this to the right place! Here's a more complete write-up following the community guidelines.</p>
+<p><strong>Extension: SPIKE Prime BLE Extension<br>
+Unofficial integration.</strong> This is an independent open-source project. It is <strong>not affiliated with, endorsed by, or sponsored by the LEGO Group or the Massachusetts Institute of Technology.</strong></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/5/4/8/548cd1426f14127f99533544398903691a86c781.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/548cd1426f14127f99533544398903691a86c781" title="Screenshot 2026-05-26 at 9.34.02 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/5/4/8/548cd1426f14127f99533544398903691a86c781_2_517x119.png" alt="Screenshot 2026-05-26 at 9.34.02 AM" data-base62-sha1="c3XO3PAVFlWRCT9Lc1vHTkPf8Rj" width="517" height="119" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/5/4/8/548cd1426f14127f99533544398903691a86c781_2_517x119.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/5/4/8/548cd1426f14127f99533544398903691a86c781_2_775x178.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/5/4/8/548cd1426f14127f99533544398903691a86c781_2_1034x238.png 2x" data-dominant-color="EAEBE3"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.34.02 AM</span><span class="informations">1124×260 32.8 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/6/3/6/63683468d5b8a587f75879026fb97897de33df05.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/63683468d5b8a587f75879026fb97897de33df05" title="Screenshot 2026-05-26 at 9.34.54 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/6/3/6/63683468d5b8a587f75879026fb97897de33df05_2_136x250.png" alt="Screenshot 2026-05-26 at 9.34.54 AM" data-base62-sha1="ebowGqKdqJoFEEKIObonWG2a9GB" width="136" height="250" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/6/3/6/63683468d5b8a587f75879026fb97897de33df05_2_136x250.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/6/3/6/63683468d5b8a587f75879026fb97897de33df05_2_204x375.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/6/3/6/63683468d5b8a587f75879026fb97897de33df05_2_272x500.png 2x" data-dominant-color="ECEEE7"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.34.54 AM</span><span class="informations">408×750 43.4 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/c/2/5/c25a277a4fafc3125d109ceefc5d422b2c63d0dc.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/c25a277a4fafc3125d109ceefc5d422b2c63d0dc" title="Screenshot 2026-05-26 at 9.35.13 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/c/2/5/c25a277a4fafc3125d109ceefc5d422b2c63d0dc_2_130x250.png" alt="Screenshot 2026-05-26 at 9.35.13 AM" data-base62-sha1="rJjMAOFcHPGKn9mX3Z7S0yH5mdm" width="130" height="250" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/c/2/5/c25a277a4fafc3125d109ceefc5d422b2c63d0dc_2_130x250.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/c/2/5/c25a277a4fafc3125d109ceefc5d422b2c63d0dc_2_195x375.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/c/2/5/c25a277a4fafc3125d109ceefc5d422b2c63d0dc_2_260x500.png 2x" data-dominant-color="ECEEE7"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.35.13 AM</span><span class="informations">384×736 41.8 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p><strong>What it does:</strong><br>
+An open-source App Inventor extension that connects to LEGO SPIKE Prime hubs over Bluetooth Low Energy (BLE). It lets students control motors, read sensors, display on the LED matrix, and coordinate drive-base movements — all from App Inventor blocks, without needing the official LEGO software.</p>
+<p><strong>What makes it unique:</strong><br>
+There is currently no other App Inventor extension that communicates with SPIKE Prime over BLE. The official LEGO app uses a proprietary protocol (COBS-XOR framing over a custom GATT service). This extension reverse-engineers that protocol and exposes it through simple, student-friendly blocks.</p>
+<p><strong>Features (v0.1.0 — MVP):</strong></p>
+<ul>
+<li>
+<p>BLE scanning and connection (auto-reconnect, ghost device filtering)</p>
+</li>
+<li>
+<p>Motor control: speed, position (absolute/relative), stall detection, stop</p>
+</li>
+<li>
+<p>Coordinated drive-base: forward, turn, arc, tank-style (left/right speed)</p>
+</li>
+<li>
+<p>LED matrix: set pixels, display patterns, clear</p>
+</li>
+<li>
+<p>Sensors: color, distance, force, tilt/orientation</p>
+</li>
+<li>
+<p>Event-driven: sensor change events, connection status events</p>
+</li>
+</ul>
+<p><strong>Blocks:</strong><br>
+LegoSpikeConnectivity</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/0/4/6/04658a148419741e5392a68d67edd79778b9c661.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/04658a148419741e5392a68d67edd79778b9c661" title="Screenshot 2026-05-26 at 9.36.47 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/0/4/6/04658a148419741e5392a68d67edd79778b9c661_2_256x500.png" alt="Screenshot 2026-05-26 at 9.36.47 AM" data-base62-sha1="CTskFEzAKpThwScyjxFeHtGvnP" width="256" height="500" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/0/4/6/04658a148419741e5392a68d67edd79778b9c661_2_256x500.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/0/4/6/04658a148419741e5392a68d67edd79778b9c661_2_384x750.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/0/4/6/04658a148419741e5392a68d67edd79778b9c661_2_512x1000.png 2x" data-dominant-color="CAC0B2"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.36.47 AM</span><span class="informations">674×1314 113 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/2/8/f/28fbbcbb5123a7a10622464c23d9c3aca001b615.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/28fbbcbb5123a7a10622464c23d9c3aca001b615" title="Screenshot 2026-05-26 at 9.37.07 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/2/8/f/28fbbcbb5123a7a10622464c23d9c3aca001b615_2_252x375.png" alt="Screenshot 2026-05-26 at 9.37.07 AM" data-base62-sha1="5QyrufmR76HGAtcIdRsTNwZKrDn" width="252" height="375" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/2/8/f/28fbbcbb5123a7a10622464c23d9c3aca001b615_2_252x375.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/2/8/f/28fbbcbb5123a7a10622464c23d9c3aca001b615_2_378x562.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/2/8/f/28fbbcbb5123a7a10622464c23d9c3aca001b615_2_504x750.png 2x" data-dominant-color="BABFBF"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.37.07 AM</span><span class="informations">668×990 95.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p>LegoSpikeMotors</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/7/9/d/79d2cef6543af15200ee07f78c18b53e284fe33f.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/79d2cef6543af15200ee07f78c18b53e284fe33f" title="Screenshot 2026-05-26 at 9.37.30 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/7/9/d/79d2cef6543af15200ee07f78c18b53e284fe33f_2_218x250.png" alt="Screenshot 2026-05-26 at 9.37.30 AM" data-base62-sha1="hnHqAPLeVihBoH9OorGolZtCIGz" width="218" height="250" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/7/9/d/79d2cef6543af15200ee07f78c18b53e284fe33f_2_218x250.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/7/9/d/79d2cef6543af15200ee07f78c18b53e284fe33f_2_327x375.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/7/9/d/79d2cef6543af15200ee07f78c18b53e284fe33f_2_436x500.png 2x" data-dominant-color="CBCBCA"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.37.30 AM</span><span class="informations">748×854 74.7 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p>LegoSpikeMovement</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/8/7/c/87c8e8287ee6d8d4667516dd0ca6076b044ec51e.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/87c8e8287ee6d8d4667516dd0ca6076b044ec51e" title="Screenshot 2026-05-26 at 9.37.41 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/8/7/c/87c8e8287ee6d8d4667516dd0ca6076b044ec51e_2_275x375.png" alt="Screenshot 2026-05-26 at 9.37.41 AM" data-base62-sha1="jncTLDDR7A4uEdt7B5wOwXu54bc" width="275" height="375" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/8/7/c/87c8e8287ee6d8d4667516dd0ca6076b044ec51e_2_275x375.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/8/7/c/87c8e8287ee6d8d4667516dd0ca6076b044ec51e_2_412x562.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/8/7/c/87c8e8287ee6d8d4667516dd0ca6076b044ec51e_2_550x750.png 2x" data-dominant-color="C8C7C7"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.37.41 AM</span><span class="informations">804×1094 101 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p>LegoSpikeSensors</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/7/f/e/7fe53ebf192b5d3068acf9216b1a7ba55738312b.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/7fe53ebf192b5d3068acf9216b1a7ba55738312b" title="Screenshot 2026-05-26 at 9.38.08 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/7/f/e/7fe53ebf192b5d3068acf9216b1a7ba55738312b_2_265x500.png" alt="Screenshot 2026-05-26 at 9.38.08 AM" data-base62-sha1="ifpNeA3YOD0PsybNqKOKYYNakn9" width="265" height="500" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/7/f/e/7fe53ebf192b5d3068acf9216b1a7ba55738312b_2_265x500.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/7/f/e/7fe53ebf192b5d3068acf9216b1a7ba55738312b_2_397x750.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/7/f/e/7fe53ebf192b5d3068acf9216b1a7ba55738312b_2_530x1000.png 2x" data-dominant-color="CDC3B7"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.38.08 AM</span><span class="informations">696×1310 108 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/c/8/0/c80da2f22a4290c2702f701dbf2f3c8d48675d1b.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/c80da2f22a4290c2702f701dbf2f3c8d48675d1b" title="Screenshot 2026-05-26 at 9.38.26 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/c/8/0/c80da2f22a4290c2702f701dbf2f3c8d48675d1b_2_258x375.png" alt="Screenshot 2026-05-26 at 9.38.26 AM" data-base62-sha1="sxKI1U2pDNs72dulryIevurcP47" width="258" height="375" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/c/8/0/c80da2f22a4290c2702f701dbf2f3c8d48675d1b_2_258x375.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/c/8/0/c80da2f22a4290c2702f701dbf2f3c8d48675d1b_2_387x562.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/c/8/0/c80da2f22a4290c2702f701dbf2f3c8d48675d1b_2_516x750.png 2x" data-dominant-color="C3C7C3"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.38.26 AM</span><span class="informations">694×1008 92.3 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p>LegoSpikeLight</p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/5/6/a/56ab6bd0cdf02b39579e0f581173ea2d058a9537.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/56ab6bd0cdf02b39579e0f581173ea2d058a9537" title="Screenshot 2026-05-26 at 9.38.40 AM"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/5/6/a/56ab6bd0cdf02b39579e0f581173ea2d058a9537_2_245x375.png" alt="Screenshot 2026-05-26 at 9.38.40 AM" data-base62-sha1="cmIkuMD9GNj1fVTuhgQJ97brLMz" width="245" height="375" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/5/6/a/56ab6bd0cdf02b39579e0f581173ea2d058a9537_2_245x375.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/5/6/a/56ab6bd0cdf02b39579e0f581173ea2d058a9537_2_367x562.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/5/6/a/56ab6bd0cdf02b39579e0f581173ea2d058a9537_2_490x750.png 2x" data-dominant-color="C5C1C5"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">Screenshot 2026-05-26 at 9.38.40 AM</span><span class="informations">716×1092 94.2 KB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p><strong>Example project: SPIKEPrimeTest.aia</strong></p>
+<p><div class="lightbox-wrapper"><a class="lightbox" href="https://community.appinventor.mit.edu/uploads/default/original/4X/a/5/c/a5c1ffc8ccc96c9e196b63b163fc30856e9386c0.png" data-download-href="https://community.appinventor.mit.edu/uploads/default/a5c1ffc8ccc96c9e196b63b163fc30856e9386c0" title="blocks-62"><img src="https://community.appinventor.mit.edu/uploads/default/optimized/4X/a/5/c/a5c1ffc8ccc96c9e196b63b163fc30856e9386c0_2_690x376.png" alt="blocks-62" data-base62-sha1="nEmqhtQWgLop3LPMvPyQ1Cr5TbO" width="690" height="376" srcset="https://community.appinventor.mit.edu/uploads/default/optimized/4X/a/5/c/a5c1ffc8ccc96c9e196b63b163fc30856e9386c0_2_690x376.png, https://community.appinventor.mit.edu/uploads/default/optimized/4X/a/5/c/a5c1ffc8ccc96c9e196b63b163fc30856e9386c0_2_1035x564.png 1.5x, https://community.appinventor.mit.edu/uploads/default/optimized/4X/a/5/c/a5c1ffc8ccc96c9e196b63b163fc30856e9386c0_2_1380x752.png 2x" data-dominant-color="92896A"><div class="meta"><svg class="fa d-icon d-icon-far-image svg-icon" aria-hidden="true"><use href="#far-image"></use></svg><span class="filename">blocks-62</span><span class="informations">4251×2321 1.43 MB</span><svg class="fa d-icon d-icon-discourse-expand svg-icon" aria-hidden="true"><use href="#discourse-expand"></use></svg></div></a></div></p>
+<p></p><div class="video-placeholder-container" data-video-src="/uploads/default/original/4X/a/b/5/ab5137cf9bab8fba73518510681fc0c1242cd4d4.mp4" data-thumbnail-src="https://community.appinventor.mit.edu/uploads/default/original/4X/d/4/b/d4b289065614e369a7849650533a388be9a00331.jpeg" data-video-base62-sha1="orxEGyXNUOmsvN0hEdwVq0qiSJ6.mp4">
+  </div><br>
+Available in the GitHub release, under Assets: <a href="https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0">https://github.com/edcheng1010/appinventor-lego-spike-prime-extension/releases/tag/v0.1.0</a><p></p>
+<p><strong>Android compatibility:</strong></p>
+<ul>
+<li>
+<p>Minimum: Android 8.0 (API 26) — required for BLE</p>
+</li>
+<li>
+<p>Tested on: Samsung Galaxy S6, Android 13; Google Pixel 5, Android 13</p>
+</li>
+</ul>
+<p><strong>Changelog:</strong></p>
+<ul>
+<li>v0.1.0 (May 2026): Initial MVP release — BLE connection, motor control, sensors, LED matrix, drive-base coordination</li>
+</ul>
+<p><strong>Source code:</strong><br>
+Fully open-source (Apache 2.0): <a href="https://github.com/edcheng1010/appinventor-lego-spike-prime-extension">https://github.com/edcheng1010/appinventor-lego-spike-prime-extension</a></p>
+<p><strong>Credits:</strong><br>
+Built on top of the MIT App Inventor BLE component. Protocol reverse-engineering based on community documentation of the SPIKE Prime UART service.</p>
+<p><strong>Price:</strong> Free and open-source.</p>
+            </div>
+
+            <div itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+              <meta itemprop="interactionType" content="http://schema.org/LikeAction"/>
+              <meta itemprop="userInteractionCount" content="2" />
+              <span class='post-likes'>2 Likes</span>
+            </div>
+
+
+            
+          </div>
+    </div>
+
+
+    
+
+
+
+
+    </div>
+    <footer class="container wrap">
+  <nav class='crawler-nav'>
+    <ul>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/' itemprop="url">Home </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/categories' itemprop="url">Categories </a>
+        </span>
+      </li>
+      <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+        <span itemprop='name'>
+          <a href='/guidelines' itemprop="url">Guidelines </a>
+        </span>
+      </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='/tos' itemprop="url">Terms of Service </a>
+          </span>
+        </li>
+        <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+          <span itemprop='name'>
+            <a href='/privacy' itemprop="url">Privacy Policy </a>
+          </span>
+        </li>
+    </ul>
+  </nav>
+  <p class='powered-by-link'>Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+</footer>
+
+    
+    
+  </body>
+  
+</html>

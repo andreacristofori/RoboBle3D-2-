@@ -1,0 +1,41 @@
+14:try {
+53:    try { motor.run(_LEFT_PORT, left_vel) }
+55:    try { motor.run(_RIGHT_PORT, right_vel) }
+90:    try { motor.reset_relative_position(_LEFT_PORT, 0) }
+92:    try { motor.reset_relative_position(_RIGHT_PORT, 0) }
+94:    try { motor.run(_LEFT_PORT, left_vel) }
+96:    try { motor.run(_RIGHT_PORT, right_vel) }
+99:    try {
+106:            try { pos_left = abs(motor.relative_position(_LEFT_PORT)) }
+108:            try { pos_right = abs(motor.relative_position(_RIGHT_PORT)) }
+117:        try { motor.stop(_LEFT_PORT) }
+119:        try { motor.stop(_RIGHT_PORT) }
+127:    try { motor_pair.stop(motor_pair.PAIR_1) }
+129:    try { motor.stop(_LEFT_PORT) }
+131:    try { motor.stop(_RIGHT_PORT) }
+135:    try {
+152:    try {
+162:            try {
+179:                try {
+186:                try {
+189:                        try { motor.stop(getattr(port, p)) }
+204:try {
+210:try {
+223:    try {
+231:    try {
+237:    try {
+255:                    try {
+262:                try {
+266:                    try {
+273:                try {
+277:                    try {
+285:                try {
+289:                    try {
+298:                try {
+305:                    try {
+327:                try {
+363:                try {
+385:            try {
+392:                try {
+403:        try {
+410:            try {
